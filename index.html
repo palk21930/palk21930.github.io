@@ -1,24 +1,308 @@
-<section class="stats">
-    <h2 class="section-title">University Highlights</h2>
-    <div class="course-grid">
-        <div class="course-card">
-            <h3>15,000+</h3>
-            <p>Students</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Ram Shiksha Mandir</title>
 
-        <div class="course-card">
-            <h3>300+</h3>
-            <p>Faculty Members</p>
-        </div>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        <div class="course-card">
-            <h3>50+</h3>
-            <p>Academic Programs</p>
-        </div>
+body{
+    line-height:1.6;
+    color:#333;
+}
 
-        <div class="course-card">
-            <h3>95%</h3>
-            <p>Placement Support</p>
+header{
+    background:linear-gradient(to right,#0d47a1,#1976d2);
+    color:white;
+    padding:20px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80') center/cover;
+    height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+section{
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0d47a1;
+}
+
+.about{
+    background:#f5f5f5;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#1976d2;
+    margin-bottom:10px;
+}
+
+.management{
+    background:#e3f2fd;
+}
+
+.management-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.person{
+    background:white;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.contact{
+    background:#f5f5f5;
+}
+
+.contact p{
+    text-align:center;
+    font-size:18px;
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">Shree Ram Shiksha Mandir</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#management">Management</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Shree Ram Shiksha Mandir</h1>
+        <p>CBSE Affiliated School | Excellence in Education & Character Building</p>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Our School</h2>
+        <p style="text-align:center; max-width:900px; margin:auto;">
+            Shree Ram Shiksha Mandir, located in Jindpur, Delhi - 110036,
+            is a CBSE affiliated institution committed to providing quality
+            education and holistic development of students. Our mission is
+            to nurture young minds with knowledge, discipline, values, and
+            leadership skills to prepare them for a successful future.
+        </p>
+    </div>
+</section>
+
+<section id="activities">
+    <div class="container">
+        <h2 class="section-title">Facilities & Activities</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Sports</h3>
+                <p>Encouraging physical fitness through various indoor and outdoor sports activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Dance</h3>
+                <p>Creative dance programs that help students express themselves confidently.</p>
+            </div>
+
+            <div class="card">
+                <h3>Arts & Crafts</h3>
+                <p>Developing creativity and imagination through artistic activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Music</h3>
+                <p>Music classes designed to enhance talent and appreciation for the arts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Library</h3>
+                <p>A well-stocked library that supports learning, research, and reading habits.</p>
+            </div>
+
+            <div class="card">
+                <h3>Professional Teachers</h3>
+                <p>Highly qualified and experienced teachers dedicated to student success.</p>
+            </div>
         </div>
     </div>
 </section>
+
+<section id="management" class="management">
+    <div class="container">
+        <h2 class="section-title">School Leadership</h2>
+
+        <div class="management-box">
+            <div class="person">
+                <h3>Mr. Dinesh Rana</h3>
+                <p><strong>Chairman</strong></p>
+                <p>Guiding the institution with vision, dedication, and commitment to educational excellence.</p>
+            </div>
+
+            <div class="person">
+                <h3>Mrs. Neet Munjal</h3>
+                <p><strong>Principal</strong></p>
+                <p>Leading academic excellence and ensuring holistic development of every student.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>CBSE Curriculum</h3>
+                <p>Modern and structured education aligned with CBSE standards.</p>
+            </div>
+
+            <div class="card">
+                <h3>Experienced Faculty</h3>
+                <p>Dedicated and highly professional teachers focused on student growth.</p>
+            </div>
+
+            <div class="card">
+                <h3>Holistic Development</h3>
+                <p>Academics, sports, arts, music, and co-curricular activities under one roof.</p>
+            </div>
+
+            <div class="card">
+                <h3>Safe Environment</h3>
+                <p>A supportive and secure learning atmosphere for all students.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p><strong>School Name:</strong> Shree Ram Shiksha Mandir</p>
+        <p><strong>Location:</strong> Jindpur, Delhi - 110036</p>
+        <p><strong>Affiliation:</strong> CBSE Affiliated School</p>
+        <p><strong>Chairman:</strong> Mr. Dinesh Rana</p>
+        <p><strong>Principal:</strong> Mrs. Neet Munjal</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Shree Ram Shiksha Mandir, Jindpur, Delhi - 110036. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
