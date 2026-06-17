@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ram Shiksha Mandir</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #1565c0;
+            padding-bottom: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #1565c0;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SHREE RAM SHIKSHA MANDIR</h1>
+
+    <h2>School Information Form</h2>
+
+    <form action="/action_page.php">
+
+        <label for="founder">Founder of Shree Ram Shiksha Mandir:</label>
+        <input type="text" id="founder" name="founder" value="Mr. Dinesh Rana">
+
+        <label for="location">Located In:</label>
+        <input type="text" id="location" name="location" value="Jindpur">
+
+        <label for="year">Started In Which Year:</label>
+        <input type="text" id="year" name="year" value="1999">
+
+        <hr>
+
+        <h3>Choose Your Favourite School</h3>
+
+        <input type="radio" id="jmv" name="fav_school" value="JMV">
+        <label for="jmv">JMV</label><br>
+
+        <input type="radio" id="dav" name="fav_school" value="DAV">
+        <label for="dav">DAV</label><br><br>
+
+        <h3>Vehicles</h3>
+
+        <input type="checkbox" id="bike" name="bike">
+        <label for="bike">I have a Bike</label><br>
+
+        <input type="checkbox" id="car" name="car">
+        <label for="car">I have a Car</label><br>
+
+        <input type="checkbox" id="boat" name="boat">
+        <label for="boat">I have a Boat</label><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+</body>
+</html>
